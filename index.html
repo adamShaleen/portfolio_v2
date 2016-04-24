@@ -12,17 +12,20 @@
     </head>
     <body ng-controller="controller">
 
-        <!--Header container-->
-        <div class="row" id="header">
+        <!--Header container Bootstrap-->
+        <!-- <div class="row" id="header">
             <div class="col-xs-12 col-sm-8 col-md-10" id="title"><p>Adam Shaleen</p></div>
             <div class="col-xs-4 col-md-2" id="menu"><img src="img/menu.tree.png"></img></div>
-        </div>
-
-        <!--Web Dev Title-->
-        <!-- <div class="row" id="webDev">
-            <div class="col-xs-12 col-sm-12 col-md-12"><p>Web Developer.</p><p>Bike Mechanic</p><p>Dog Dad</p></div>
         </div> -->
 
+        <!--Header container flex-->
+        <div class="title_container" id="header">
+            <div class="title_text"><p>Adam Shaleen</p></div>
+            <div class="menu_icon"><img src="img/menu.tree.png"></img></div>
+        </div>
+
+
+        <!--Tagline-->
         <div class="tagline"><p>Web Developer.</p><p>Bike Mechanic.</p><p>Dog Dad.</p></div>
 
         <!--Parrallax-->
@@ -37,22 +40,34 @@
         <div id="wall_2" class="image" data-stellar-background-ratio="0.5"></div>
         <div id="content_2" class="content">
             <h1>Skillset</h1>
+            <div class="skill_icons">
             <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png"></img>
             <img src="http://scottace.com/img/css3-icon.png"></img>
             <img src="img/javascript.png"></img>
             <img src="img/angular.png"></img>
             <img src="https://strongloop.com/wp-content/uploads/2015/12/nodejs-logo.png"></img>
             <img src="https://cms-assets.tutsplus.com/uploads/users/1116/posts/24835/preview_image/mongodb-logo.png"></img>
-            <p>I studied the fundementals of meanstack web development through an immersive program at DevMountain.  I believe I have a strong foundation that satisfies the need of many types of projects, but am eager to learn more ways to make the web better.</p>
+        </div>
+            <p>{{displaySkillset}}</p>
         </div>
 
         <div id="wall_3" class="image" data-stellar-background-ratio="0.5"></div>
         <div id="content_3" class="content">
             <h1>Projects</h1>
-            <img src="img/archer.png"</img>
-            <a href="http://adamshaleen.github.io/" target="_blank"><img src="img/pokemon.png"></a></img>
-            <img src="img/taylor.png"></img>
+            <div class="project_icons">
+                <a href="http://adamshaleen.github.io/" target="_blank"><img src="img/archer.png"></a></img>
+                <img src="img/pokemon.png"></img>
+                <img src="img/taylor.png"></img>
+            </div>
+            <p>Placeholder text about projects.  Blah blah blah, I'm so great, please give me a job. Blah blah blah blah blah
+            blah blah blah blah blah Placeholder text about projects.  Blah blah blah, I'm so great, please give me a job. Blah blah blah blah blah
+            blah blah blah blah blah Placeholder text about projects.  Blah blah blah, I'm so great, please give me a job. Blah blah blah blah blah
+            blah blah blah blah blah</p>
         </div>
+
+
+        <!-- <div id="wall_4" class="image" data-stellar-background-ratio="0.5"></div>
+        <div id="content_4" class="content"></div> -->
 
 
         <!--Footer Contact Container-->
@@ -79,6 +94,7 @@
         <script src="js/app.js"></script>
         <script src="js/controller.js"></script>
         <script src="js/service.js"></script>
+        <script src="js/animations.js"></script>
         <!--CLOSING BODY TAG-->
     </body>
 </html>

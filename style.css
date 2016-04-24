@@ -12,20 +12,26 @@ html, body {
     background: url("img/tree_header.jpg");
 }
 
-#title {
+.title_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title_text {
     font-size: 14vw;
-    text-align: center;
     color: white;
     text-shadow: 2px 2px black;
 }
 
-#menu {
-
+.menu_icon {
+    width: 12vw;
+    margin-top: 50px;
+    padding-left: 2vw;
 }
 
-#menu img {
+.menu_icon img {
     width: 12vw;
-    margin-top: 7vh;
 }
 
 .tagline {
@@ -38,7 +44,7 @@ html, body {
 /*Parallax*/
 
 .image {
-    height: 1200px;
+    height: 750px;
     width: 100%;
     background: black;
     z-index: 1;
@@ -69,43 +75,55 @@ html, body {
     padding-bottom: 10px;
 }
 
+.skill_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.project_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
 #content_3 img {
     width: 25vw;
     height: 20vh;
 }
 
 #wall_1 {
-    background: url("img/tree_full.jpg") no-repeat;
+    background: url("img/tree_full_new.jpg");
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
 }
 
 #wall_2 {
-    background: url("img/tree_full.jpg") no-repeat;
+    background: url("img/tree_full_new.jpg");
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
 }
 
 #wall_3 {
-    background: url("img/tree_full.jpg") no-repeat;
+    background: url("img/tree_full_new.jpg");
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
 }
 
-#content_1 {
-
-}
-
-#content_2 {
-
-}
-
-#content_3 {
-
-}
+/*#wall_4 {
+    background: url("img/tree_header.jpg");
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    height: 250px;
+}*/
 
 /*Footer contact container*/
 
