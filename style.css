@@ -1,133 +1,122 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Crushed';
 }
 
 html, body {
     width: 100%;
-    height: 100%;
-    font-family: 'Crushed';
 }
 
-hr {
-    width: 75%;
-    margin: auto;
-    height: 1px;
-    color: black;
-    background-color: black;
+#header {
+    background: url("img/tree_header.jpg");
 }
 
-.header_container {
+#title {
+    font-size: 14vw;
     text-align: center;
-    background: black;
-}
-
-.title p {
-  font-size: 3em;
-  color: white;
-}
-
-.media_container {
-    width: 100%;
-    background-size: contain;
-    padding-bottom: 10px;
-}
-
-.developer_title {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.developer_title p {
-    font-size: 2em;
-}
-
-.bio {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 2em;
-    border: solid black 1px;
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#smallText {
-    font-size: .5em;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.skills_container {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: solid black 1px;
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.skills_container p {
-    font-size: 2em;
-    padding-bottom: 10px;
-}
-
-.skill_icon img {
-    width: 125px;
-    height: 125px;
-}
-
-
-.project_container {
-    margin-top: 10px;
-    text-align: center;
-    border: solid black 1px;
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.project_container p {
-    font-size: 2em;
-    padding-bottom: 10px;
-}
-
-.project_icon {
-    width: 200px;
-    height: 100px;
-}
-
-.contact_container {
-    text-align: center;
-    background: black;
-    padding-top: 10px;
-}
-
-.contact_container p {
-    font-size: 2em;
-    padding-bottom: 10px;
-}
-
-.contact_icon {
-    cursor: pointer;
-}
-
-#git {
-    width: 75px;
     color: white;
+    text-shadow: 2px 2px black;
 }
 
-#linkedin {
-    width: 75px
+#menu {
+
 }
 
-#email {
-    width: 75px;
+#menu img {
+    width: 12vw;
+    margin-top: 7vh;
+}
+
+.tagline {
+    display: flex;
+    justify-content: space-around;
+    font-size: 6vw;
+
+}
+
+/*Parallax*/
+
+.image {
+    height: 1200px;
+    width: 100%;
+    background: black;
+    z-index: 1;
+}
+
+.content {
+    width: 100%;
+    background: white;
+    z-index: 2;
+    border: 2px solid black;
+}
+
+.content h1 {
+    font-size: 6vw;
+    color: #464646;
+    margin-left: 1vw;
+}
+
+.content p {
+    font-size: 3vw;
+    color: #343434;
+    margin-left: 1vw;
+}
+
+#content_2 img {
+    width: 16vw;
+    height: 18vh;
+    padding-bottom: 10px;
+}
+
+#content_3 img {
+    width: 25vw;
+    height: 20vh;
+}
+
+#wall_1 {
+    background: url("img/tree_full.jpg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#wall_2 {
+    background: url("img/tree_full.jpg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#wall_3 {
+    background: url("img/tree_full.jpg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+#content_1 {
+
+}
+
+#content_2 {
+
+}
+
+#content_3 {
+
+}
+
+/*Footer contact container*/
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: black;
+}
+
+.contact img {
+    width: 10vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
