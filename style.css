@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Crushed';
+}
+
+hr {
+    width: 75%;
+    margin: auto;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.header_container {
+    text-align: center;
+    background: black;
+}
+
+.title p {
+  font-size: 3em;
+  color: white;
+}
+
+.media_container {
+    width: 100%;
+    background-size: contain;
+    padding-bottom: 10px;
+}
+
+.developer_title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.developer_title p {
+    font-size: 2em;
+}
+
+.bio {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    border: solid black 1px;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#smallText {
+    font-size: .5em;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.skills_container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid black 1px;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.skills_container p {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.skill_icon img {
+    width: 125px;
+    height: 125px;
+}
+
+
+.project_container {
+    margin-top: 10px;
+    text-align: center;
+    border: solid black 1px;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.project_container p {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.project_icon {
+    width: 200px;
+    height: 100px;
+}
+
+.contact_container {
+    text-align: center;
+    background: black;
+    padding-top: 10px;
+}
+
+.contact_container p {
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.contact_icon {
+    cursor: pointer;
+}
+
+#git {
+    width: 75px;
+    color: white;
+}
+
+#linkedin {
+    width: 75px
+}
+
+#email {
+    width: 75px;
+}
