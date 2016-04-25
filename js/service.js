@@ -9,7 +9,7 @@ this.getBio = function() {
 
 
 // Skillset text
-this.skillset = "I studied the fundementals of meanstack web development through an immersive program at DevMountain, in Provo, Utah.  I believe I have a strong foundation that satisfies the need for many different types of projects, but I am eager to learn new ways to make the web better.";
+this.skillset = "I studied the fundementals of meanstack web development through an immersive program at DevMountain, in Provo, Utah.  I believe I have a strong foundation that satisfies the need for many different types of projects, and I am excited to learn new ways to make the web better.";
 
 this.getSkillset = function() {
     return this.skillset;
