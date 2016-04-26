@@ -99,21 +99,21 @@ html, body {
 #wall_1 {
     background: url("img/tree_full.jpg");   // need these to fit and not repeat...?
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
 }
 
 #wall_2 {
     background: url("img/tree_full.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
 }
 
 #wall_3 {
     background: url("img/tree_full.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
 }
 
