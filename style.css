@@ -6,10 +6,15 @@
 
 html, body {
     width: 100%;
+    overflow-x: hidden;
 }
 
 #header {
     background: url("img/tree_header.jpg");
+}
+
+h1 {
+    margin-bottom: 20px;
 }
 
 .title_container {
@@ -26,7 +31,7 @@ html, body {
 
 .menu_icon {
     width: 12vw;
-    margin-top: 50px;
+    margin-top: 25px;
     padding-left: 2vw;
 }
 
@@ -36,15 +41,15 @@ html, body {
 
 .tagline {
     display: flex;
-    justify-content: space-around;
-    font-size: 6vw;
+    justify-content: center;
+    font-size: 4vw;
 
 }
 
 /*Parallax*/
 
 .image {
-    height: 750px;
+    height: 350px;
     width: 100%;
     background: black;
     z-index: 1;
@@ -67,6 +72,7 @@ html, body {
     font-size: 3vw;
     color: #343434;
     margin-left: 1vw;
+    padding-bottom: 20px;
 }
 
 #content_2 img {
@@ -111,19 +117,41 @@ html, body {
 }
 
 #wall_3 {
-    background: url("img/tree_full.jpg");
+    background: url("img/manual.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
-/*#wall_4 {
-    background: url("img/tree_header.jpg");
-    background-position: center;
+.about_pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pic1 {
+    background: url("img/driving.JPG") no-repeat;
+    width: 400px;
+    height: 400px;
     background-size: contain;
-    background-attachment: fixed;
-    height: 250px;
-}*/
+    border-radius: 5%;
+}
+
+.pic2 {
+    background: url("img/thumb.JPG") no-repeat;
+    width: 400px;
+    height:400px;
+    background-size: contain;
+    border-radius: 5%;
+}
+
+.pic3 {
+    background: url("img/hiking.jpeg")no-repeat;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    border-radius: 5%;
+}
 
 /*Footer contact container*/
 
