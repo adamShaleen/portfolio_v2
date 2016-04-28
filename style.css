@@ -10,7 +10,8 @@ html, body {
 }
 
 #header {
-    background: url("img/tree_header.jpg");
+    background: url("img/snow.jpg");
+    background-position: center;
 }
 
 h1 {
@@ -117,7 +118,7 @@ h1 {
 }
 
 #wall_3 {
-    background: url("img/manual.jpg");
+    background: url("img/tree_full.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -130,27 +131,23 @@ h1 {
 }
 
 .pic1 {
-    background: url("img/driving.JPG") no-repeat;
+    background: url("img/driving.JPG") no-repeat center;
     width: 400px;
-    height: 400px;
-    background-size: contain;
+    height: 325px;
+    background-size: cover;
+    background-position: center;
     border-radius: 5%;
+    margin-bottom: 20px;
 }
 
 .pic2 {
     background: url("img/thumb.JPG") no-repeat;
-    width: 400px;
-    height:400px;
-    background-size: contain;
-    border-radius: 5%;
+    background-size: cover;
 }
 
 .pic3 {
     background: url("img/hiking.jpeg")no-repeat;
-    width: 400px;
-    height: 400px;
-    background-size: contain;
-    border-radius: 5%;
+    background-size: cover;
 }
 
 /*Footer contact container*/
