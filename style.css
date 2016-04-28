@@ -10,8 +10,9 @@ html, body {
 }
 
 #header {
-    background: url("img/snow.jpg");
-    background-position: center;
+    background: black;
+    /*background: url("img/manual.jpg");*/
+    /*background-position: left;*/
 }
 
 h1 {
