@@ -11,8 +11,6 @@ html, body {
 
 #header {
     background: black;
-    /*background: url("img/manual.jpg");*/
-    /*background-position: left;*/
 }
 
 h1 {
@@ -31,6 +29,9 @@ h1 {
     text-shadow: 2px 2px black;
 }
 
+
+/*Figure out how to center menu-icon*/
+
 .menu_icon {
     width: 12vw;
     margin-top: 25px;
@@ -38,7 +39,7 @@ h1 {
 }
 
 .menu_icon img {
-    width: 12vw;
+    width: 100%;;
 }
 
 .tagline {
@@ -55,6 +56,26 @@ h1 {
     width: 100%;
     background: black;
     z-index: 1;
+}
+
+/*Media queries for parallax background*/
+
+@media (max-width: 900px) {
+    .image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    .image {
+        height: 225px;
+    }
+}
+
+@media (max-width: 320px) {
+    .image {
+        height: 150px;
+    }
 }
 
 .content {
@@ -87,14 +108,14 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 .project_icons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     margin-left: 1vw;
     margin-right: 1vw;
 }
@@ -133,8 +154,8 @@ h1 {
 
 .pic1 {
     background: url("img/driving.JPG") no-repeat center;
-    width: 400px;
-    height: 325px;
+    width: 30vw;
+    height: 28vh;
     background-size: cover;
     background-position: center;
     border-radius: 5%;
