@@ -1,7 +1,7 @@
 angular.module("hireMe").service("service", function() {
 
 // BIO text
-this.bio = "I hail from the cold, northern lands of Minnesota, where I learned that a persons work ethic is worth their weight in gold.  I've done quite a bit of everything over the years, but now I'm setting my sights on a career in web development.  Outside of the digital world you can find me out on the trail with my wife, Jen, and our cattle dog, Archer.  I'd love to talk with you about your projects, your dev team, or where the good locals spots are.";
+this.bio = "I spent the first 28 years of my life in Minnesota, where I learned all about proper ice house placement, how to properly eat a 'Juicy Lucy', and about work ethic.  I've done quite a bit of everything over the years, but now I'm setting my sights on a career in web development.  Outside of the digital world you can find me out on the trail with my wife, Jen, and our cattle dog, Archer.  I'd love to talk with you about your projects, your dev team, or where the good locals spots are.";
 
 this.getBio = function() {
     return this.bio;
@@ -9,7 +9,7 @@ this.getBio = function() {
 
 
 // Skillset text
-this.skillset = "I studied the fundementals of meanstack web development through an immersive program at DevMountain, in Provo, Utah.  I believe I have a strong foundation that satisfies the need for many different types of projects, and I am excited to learn new ways to make the web better.";
+this.skillset = "I studied the fundementals of meanstack web development through an immersive program at DevMountain, in Provo, Utah. I've been pushed farther than I thought I could go in such a short time, but I've learned how to succeed with the tools I now have. I believe I have a strong foundation that satisfies the need for many different types of projects, and I am excited to learn new ways to make the web better.";
 
 this.getSkillset = function() {
     return this.skillset;
