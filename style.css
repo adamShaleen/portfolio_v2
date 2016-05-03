@@ -10,7 +10,7 @@ html, body {
 }
 
 #header {
-    background: black;
+    background: linear-gradient(to top, #000000, #0e4a24);
 }
 
 h1 {
@@ -29,9 +29,6 @@ h1 {
     text-shadow: 2px 2px black;
 }
 
-
-/*Figure out how to center menu-icon*/
-
 .menu_icon {
     width: 12vw;
     margin-top: 25px;
@@ -39,7 +36,19 @@ h1 {
 }
 
 .menu_icon img {
-    width: 100%;;
+    width: 100%;
+    cursor: pointer;
+}
+
+.menu_cover {
+    width: 12vw;
+    padding-left: 2vw;
+    width: 12vw;
+}
+
+.menu_cover img {
+    width: 100%;
+    cursor: pointer;
 }
 
 .modal {
@@ -49,15 +58,27 @@ h1 {
     position: fixed;
     background-color: rgba(3, 3, 3, 0.8);
     width: 100%;
-    height: 100%;
+    height: 50%;
     color: white;
     text-align: center;
+    margin-top: 77px;
 }
 
 .modal img {
     width: 60vw;
     height: auto;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.x {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+    padding-top: 40px;
+    cursor: pointer;
+}
+.x:hover {
+    color: rgb(115, 22, 125);
 }
 
 .modal_link_flex {
@@ -78,7 +99,7 @@ h1 {
     cursor: pointer;
 }
 
-.modal_link a: hover {
+.modal_link a:hover {
     color: rgb(115, 22, 125);
 }
 
@@ -102,7 +123,6 @@ h1 {
     width: 100%;
     background: white;
     z-index: 2;
-    /*border: 2px solid black;*/
 }
 
 .content h1 {
@@ -205,13 +225,17 @@ h1 {
 
 .contact img {
     width: 10vw;
+    cursor: pointer;
 }
-
 
 /* Media queries */
 /* set for iPhone 5 */
 @media (min-width: 320px) {
     .menu_icon {
+        margin-top: 9px;
+    }
+
+    .menu_cover {
         margin-top: 9px;
     }
     .image {
@@ -250,17 +274,31 @@ h1 {
 }
 
 @media (min-width: 414px) {
+    .modal {
+        margin-top: 104px;
+    }
     .menu_icon {
+        margin-top: 12px;
+    }
+    .menu_cover {
         margin-top: 12px;
     }
 }
 
 /* iPad */
 @media (min-width: 768px) {
+    .modal {
+        margin-top: 162px;
+        height: 60%;
+    }
     .title_text {
         font-size: 14vw;
     }
     .menu_icon {
+        margin-top: 25px;
+        width: 9vw;
+    }
+    .menu_cover {
         margin-top: 25px;
         width: 9vw;
     }
@@ -285,6 +323,10 @@ h1 {
 }
 
 @media (min-width: 1100px) {
+    .modal {
+        margin-top: 204px;
+        height: 70%;
+    }
     .modal img {
         width: 40vw;
     }
@@ -292,6 +334,9 @@ h1 {
         font-size: 12vw;
     }
     .menu_icon {
+        margin-top: 21px;
+    }
+    .menu_cover {
         margin-top: 21px;
     }
     .image {
@@ -315,7 +360,18 @@ h1 {
 }
 
 @media (min-width: 1400px) {
+    .modal {
+        margin-top: 260px;
+        height: 70%;
+    }
+
+    .modal_link {
+        4vw;
+    }
     .menu_icon {
+        margin-top: 25px;
+    }
+    .menu_cover {
         margin-top: 25px;
     }
     .image {
@@ -342,11 +398,32 @@ h1 {
     }
 }
 
+@media (min-width: 1600px) {
+        .modal {
+            margin-top: 296px;
+        }
+}
+
 @media (min-width: 1900px) {
+    .modal {
+        margin-top: 286px;
+        height: 70%;
+    }
+
+    .modal_link {
+        font-size: 4vw;
+    }
+    .modal img {
+        width: 40vh;
+    }
     .title_text {
         font-size: 9vw;
     }
     .menu_icon {
+        margin-top: 25px;
+        width: 8vw;
+    }
+    .menu_cover {
         margin-top: 25px;
         width: 8vw;
     }

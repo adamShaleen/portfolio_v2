@@ -15,4 +15,12 @@ this.getSkillset = function() {
     return this.skillset;
 };
 
+
+// Project text
+this.project = "My current body of work focuses on simple design and appropriate functionality for the task.  The more I learn, the more I try to incorporate new techniques into my style.  Please check back often for new and different examples as I continue my career into web development.";
+
+this.getProject = function() {
+    return this.project;
+};
+
 });  // closing service

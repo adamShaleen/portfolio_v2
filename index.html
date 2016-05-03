@@ -12,23 +12,24 @@
     <body ng-controller="controller">
 
         <!--modal-->
-        <!-- <div class="modal"><div><img src="img/modal.jpg"></div>
-            <p class="modal_link">Adam Shaleen</p><br>
+        <div ng-click="toggleClick()" ng-show="toggle" class="modal"><div><img src="img/modal.jpg"></div>
             <div class="modal_link_flex">
                 <div><p class="modal_link"><a href="https://github.com/adamShaleen" target="_blank">GitHub</a></p></div>
                 <div><p class="modal_link"><a href="https://www.linkedin.com/in/adam-shaleen-ab481225" target="_blank">LinkedIn</a></p></div>
                 <div><p class="modal_link"><a href="mailto:adamshaleen@gmail.com" target="_blank">Email</a></p></div>
             </div>
-        </div> -->
+            <div class="x"><p>Close</p></div>
+        </div>
 
         <!--Header container flex-->
         <div class="title_container" id="header">
             <div class="title_text"><p>Adam Shaleen</p></div>
-            <div class="menu_icon"><img src="img/headshot.png"></img></div>
+            <div ng-click="toggleClick()" ng-model="toggle" ng-hide="toggle" class="menu_icon"><img src="img/headshot.png"></img></div>
+            <div ng-click="toggleClick()" ng-show="toggle" class="menu_cover"><img src="img/menu_cover.png"></img></div>
         </div>
 
         <!--Tagline-->
-        <div class="tagline"><p>Web Developer</p></div>
+        <div class="tagline"><p>Web Developer. Bike Mechanic.  Dog enthusiast.</p></div>
 
         <!--Parrallax-->
         <div id="wall_1" class="image" data-stellar-background-ratio="0.05"></div>
@@ -68,16 +69,8 @@
                 <div><a href="https://github.com/adamShaleen/pokemon.index" target="_blank"><img src="img/pokemon.png"></a></img></div>
                 <div><img src="img/taylor.png"></img></div>
             </div>
-            <p>Placeholder text about projects.  Blah blah blah, I'm so great, please give me a job. Blah blah blah blah blah
-            blah blah blah blah blah Placeholder text about projects.  Blah blah blah, I'm so great, please give me a job. Blah blah blah blah blah
-            blah blah blah blah blah Placeholder text about projects.  Blah blah blah, I'm so great, please give me a job. Blah blah blah blah blah
-            blah blah blah blah blah</p>
+            <p>{{displayProject}}</p>
         </div>
-
-
-        <!-- <div id="wall_4" class="image" data-stellar-background-ratio="0.5"></div>
-        <div id="content_4" class="content"></div> -->
-
 
         <!--Footer Contact Container-->
 
@@ -88,15 +81,12 @@
             <div class="contact"><a href="mailto:adamshaleen@gmail.com"><img src="http://www.hillparadisenuwaraeliya.com/images/email.png"></a></img></div>
         </div>
 
-
         <!--Link to Jquery CDN-->
         <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
         <!--LINK TO ANGULAR LIBRARY-->
         <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.js"></script>
         <!--Linke to Angular UI router-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
-        <!--Bootstrap JS CDN-->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
         <!--Stellar.JS file-->
         <script src="stellar/stellar.js/jquery.stellar.js"></script>
         <!--LINK TO JAVASCRIPT FILES-->
@@ -107,6 +97,3 @@
         <!--CLOSING BODY TAG-->
     </body>
 </html>
-
-<!--Get rid of bootstrap?-->
-<!--At apple store-->
