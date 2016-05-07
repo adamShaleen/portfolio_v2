@@ -154,11 +154,10 @@ h1 {
     background-size: cover;
 }
 
-#content_2 img {
-    width: 16vw;
-    height: 18vh;
-    padding-bottom: 10px;
-}
+/*#content_2 img {
+    width: 14vw;
+    height: 16vh;
+}*/
 
 .skill_icons {
     display: flex;
@@ -248,7 +247,7 @@ h1 {
         margin-right: 2vw;
     }
     #content_2 img {
-        width: 16vw;
+        width: 14vw;
         height: 10vh;
     }
     #content_3 img {
@@ -298,7 +297,7 @@ h1 {
         height: 260px;
     }
     .pic1 {
-        height: 18vw;
+        height: 18vh;
     }
     #content_3 img {
         height: 15vh;
@@ -340,6 +339,10 @@ h1 {
     .content p {
         font-size: 3vw;
     }
+    .pic1 {
+        width: 30vw;
+        height: 22vh;
+    }
     #content_2 img {
         width: 12vw;
     }
@@ -373,10 +376,10 @@ h1 {
         font-size: 2vw;
     }
     .pic1  {
-        height: 25vw;
+        height: 25vh;
     }
     #content_2 img {
-        width: 15vw;
+        width: 14vw;
         height: 14vh;
     }
     #content_3 img {
@@ -390,6 +393,14 @@ h1 {
 @media (min-width: 1600px) {
         .modal {
             margin-top: 296px;
+        }
+        .pic1 {
+            width: 23vw;
+            height: 25vh;
+        }
+        #content_2 img {
+            width: 14vw;
+            height: 14vh;
         }
 }
 
@@ -415,6 +426,13 @@ h1 {
     .menu_cover {
         margin-top: 25px;
         width: 8vw;
+    }
+    .image {
+        height: 400px;
+    }
+    .pic1 {
+        width: 25vw;
+        height: 27vh;
     }
     #content_2 img {
         width: 11vw;
