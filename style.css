@@ -10,7 +10,7 @@ html, body {
 }
 
 #header {
-    background: linear-gradient(to top, #000000, #067830);
+    background: linear-gradient(to top, #000000, #067830, #000000);
 }
 
 h1 {
@@ -97,7 +97,6 @@ h1 {
     justify-content: center;
     font-size: 4vw;
     border: 1px solid black;
-
 }
 
 .image {
@@ -308,6 +307,9 @@ h1 {
     .content p {
         font-size: 4vw;
     }
+    .contact img {
+        width: 8vw;
+    }
 }
 
 @media (min-width: 1100px) {
@@ -436,9 +438,12 @@ h1 {
     }
     #content_2 img {
         width: 11vw;
-        height: 12vh;
+        height: 14vh;
     }
     #content_3 img {
         width: 25vw;
+    }
+    .contact img {
+        width: 6vw;
     }
 }
