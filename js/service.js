@@ -2,7 +2,7 @@ angular.module("hireMe").service("service", function() {
 
 
 // BIO text
-this.bio = "I spent the first 28 years of my life in Minnesota, where I learned all about proper ice house placement, how to properly eat a 'Juicy Lucy', and about work ethic.  I've done quite a bit of everything over the years, but now I'm setting my sights on a career in web development.  Outside of the digital world you can find me out on the trail with my wife, Jen, and our cattle dog, Archer.  I'd love to talk with you about your projects, your dev team, or where the good local spots are.";
+this.bio = "I grew up in Minnesota, where I learned all about proper ice house placement, how to properly eat a 'Juicy Lucy', and about work ethic.  I've done quite a bit of everything over the years, but now I'm setting my sights on a career in web development.  Outside of the digital world you can find me out on the trail with my wife, Jen, and our cattle dog, Archer.  I'd love to talk with you about your projects, your dev team, or where the good local spots are.";
 
 this.getBio = function() {
     return this.bio;
