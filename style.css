@@ -10,7 +10,8 @@ html, body {
 }
 
 #header {
-    background: linear-gradient(to top, #000000, #067830, #000000);
+    /*background: linear-gradient(to top, #000000, #067830, #000000);*/
+    background: black;
 }
 
 .title_container {
@@ -202,6 +203,9 @@ html, body {
 /*Footer contact container*/
 
 .footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: space-around;
     background: black;
