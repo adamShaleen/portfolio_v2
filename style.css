@@ -9,11 +9,6 @@ html, body {
     overflow-x: hidden;
 }
 
-#header {
-    /*background: linear-gradient(to top, #000000, #067830, #000000);*/
-    background: black;
-}
-
 .title_container {
     display: flex;
     flex-direction: row;
@@ -22,8 +17,7 @@ html, body {
 
 .title_text {
     font-size: 14vw;
-    color: white;
-    text-shadow: 2px 2px black;
+    color: black;
 }
 
 .menu_icon {
@@ -34,13 +28,6 @@ html, body {
 
 .menu_icon img {
     width: 100%;
-    cursor: pointer;
-}
-
-.menu_cover {
-    width: 12vw;
-    padding-left: 2vw;
-    width: 12vw;
 }
 
 .menu_cover img {
@@ -48,52 +35,14 @@ html, body {
     cursor: pointer;
 }
 
-.modal {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    background-color: rgba(3, 3, 3, 0.85);
-    width: 100%;
-    height: 50%;
-    color: white;
-    text-align: center;
-    margin-top: 77px;
-}
-
-.modal img {
-    width: 60vw;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.modal_link_flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.modal_link {
-    font-size: 6vw;
-}
-
-.modal_link a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-
-.modal_link a:hover {
-    color: rgb(115, 22, 125);
-}
-
 .tagline {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 4vw;
-    border: 1px solid black;
+}
+
+hr {
+    margin: auto;
+    width: 80%;
 }
 
 .image {
@@ -138,6 +87,7 @@ html, body {
     background-size: cover;
     background-position: center;
     border-radius: 2%;
+    border: 1px solid black;
     margin-bottom: 20px;
 }
 
@@ -150,11 +100,6 @@ html, body {
     background: url("img/hiking.jpeg")no-repeat;
     background-size: cover;
 }
-
-/*#content_2 img {
-    width: 14vw;
-    height: 16vh;
-}*/
 
 .skill_icons {
     display: flex;
@@ -176,6 +121,7 @@ html, body {
     width: 25vw;
     height: 20vh;
     border: 1px solid black;
+    border-radius: 2%;
 }
 
 #wall_1 {
@@ -204,15 +150,21 @@ html, body {
 
 .footer {
     width: 100%;
-    position: fixed;
     bottom: 0;
     display: flex;
-    justify-content: space-around;
-    background: black;
+    justify-content: center;
 }
 
-.contact img {
-    width: 10vw;
+.footer i {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: black;
     cursor: pointer;
 }
 
@@ -253,11 +205,6 @@ html, body {
     #content_3 img {
         width: 30vw;
         height: 10vh;
-        /*margin-right: 1vw;*/
-    }
-    .contact img {
-        margin-top: 5px;
-        margin-bottom: 2px;
     }
 }
 
@@ -299,6 +246,7 @@ html, body {
     .pic1 {
         height: 18vh;
     }
+
     #content_3 img {
         height: 15vh;
     }
@@ -307,9 +255,6 @@ html, body {
     }
     .content p {
         font-size: 4vw;
-    }
-    .contact img {
-        width: 8vw;
     }
 }
 
@@ -330,6 +275,10 @@ html, body {
     .menu_cover {
         margin-top: 21px;
     }
+    .side_margin {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
     .image {
         height: 350px;
     }
@@ -343,14 +292,16 @@ html, body {
         font-size: 3vw;
     }
     .pic1 {
-        width: 30vw;
-        height: 22vh;
+        width: 25vw;
+        height: 20vh;
     }
     #content_2 img {
-        width: 12vw;
-    }
-    .contact img {
         width: 8vw;
+    }
+
+    #content_3 img {
+        width: 25vw;
+        height: 20vh;
     }
 }
 
@@ -396,38 +347,21 @@ html, body {
     .content p {
         font-size: 2vw;
     }
-    .pic1  {
-        height: 25vh;
-    }
-    #content_2 img {
-        width: 14vw;
-        height: 14vh;
-    }
-    #content_3 img {
-        height: 20vh;
-    }
-    .contact img {
-        width: 7vw;
-    }
 }
 
 @media (min-width: 1440px) {
     .modal {
         margin-top: 265px;
     }
+
+    .modal img {
+        width: 25vw;
+    }
 }
 
 @media (min-width: 1600px) {
         .modal {
             margin-top: 296px;
-        }
-        .pic1 {
-            width: 23vw;
-            height: 25vh;
-        }
-        #content_2 img {
-            width: 14vw;
-            height: 14vh;
         }
 }
 
@@ -456,19 +390,5 @@ html, body {
     }
     .image {
         height: 400px;
-    }
-    .pic1 {
-        width: 25vw;
-        height: 27vh;
-    }
-    #content_2 img {
-        width: 11vw;
-        height: 14vh;
-    }
-    #content_3 img {
-        width: 25vw;
-    }
-    .contact img {
-        width: 6vw;
     }
 }

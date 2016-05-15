@@ -6,10 +6,4 @@ $scope.displaySkillset = service.getSkillset();
 
 $scope.displayProject = service.getProject();
 
-$scope.toggle = false;
-
-$scope.toggleClick = function() {
-    $scope.toggle = !$scope.toggle;
-};
-
 }); // closing controller

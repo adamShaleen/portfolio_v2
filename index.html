@@ -6,29 +6,26 @@
         <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
         <link href='https://fonts.googleapis.com/css?family=Crushed' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Karla:400italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
         <title>Adam Shaleen</title>
 
     </head>
     <body ng-controller="controller">
 
-        <!--modal-->
-        <div ng-click="toggleClick()" ng-show="toggle" class="modal"><div><img src="img/modal.jpg"></div>
-            <div class="modal_link_flex">
-                <div><p class="modal_link"><a href="https://github.com/adamShaleen" target="_blank">GitHub</a></p></div>
-                <div><p class="modal_link"><a href="https://www.linkedin.com/in/adam-shaleen-ab481225" target="_blank">LinkedIn</a></p></div>
-                <div><p class="modal_link"><a href="mailto:adamshaleen@gmail.com" target="_blank">Email</a></p></div>
-            </div>
-        </div>
+    <div class="side_margin">
 
         <!--Header container flex-->
         <div class="title_container" id="header">
             <div class="title_text"><p>Adam Shaleen</p></div>
-            <div ng-click="toggleClick()" ng-model="toggle" ng-hide="toggle" class="menu_icon"><img src="img/headshot.png"></img></div>
-            <div ng-click="toggleClick()" ng-show="toggle" class="menu_cover"><img src="img/menu_cover.png"></img></div>
+            <div class="menu_icon"><img src="img/headshot.png"></img></div>
+            <!-- <div class="menu_cover"><img src="img/menu_cover.png"></img></div> -->
         </div>
+
+    <hr>
 
         <!--Tagline-->
         <div class="tagline"><p>Web Developer. Bike Mechanic.  Dog enthusiast.</p></div>
+
 
         <!--Parrallax-->
         <div id="wall_1" class="image" data-stellar-background-ratio="0.05"></div>
@@ -56,21 +53,29 @@
         <div id="content_3" class="content">
             <h1>Projects</h1>
             <div class="project_icons">
+                <div><img src="img/dw_title.png"></img></div>
                 <div><a href="http://adamshaleen.github.io/" target="_blank"><img src="img/archer.png"></a></img></div>
+                <div><img src="img/placeholder.jpg"></img></div>
+            </div>
+            <div class="project_icons">
+                <div><img src="img/Breakout.png"></img></div>
                 <div><a href="https://github.com/adamShaleen/pokemon.index" target="_blank"><img src="img/pokemon.png"></a></img></div>
                 <div><img src="img/taylor.png"></img></div>
             </div>
-            <p>{{displayProject}}</p><br><br><br>
+            <p>{{displayProject}}</p>
         </div>
 
-        <!-- <div id="wall_3" class="image" data-stellar-background-ratio="0.05"></div> -->
+    <hr>
+
+    </div>
+    <!--side margin closing div-->
 
         <!--Footer Contact Container-->
 
         <div class = "footer">
-            <div class="contact"><a href="https://github.com/adamShaleen" target="_blank"><img src="http://www.hackinrio.com/github.png"></a></img></div>
-            <div class="contact"><a href="https://www.linkedin.com/in/adam-shaleen-ab481225" target="_blank"><img src="http://www.iconsplace.com/icons/preview/white/linkedin-2-256.png"></a></img></div>
-            <div class="contact"><a href="mailto:adamshaleen@gmail.com"><img src="http://www.hillparadisenuwaraeliya.com/images/email.png"></a></img></div>
+            <div class="contact"><a href="https://github.com/adamShaleen" target="_blank"><i class="fa fa-github fa-3x"</a></i></div>
+            <div class="contact"><a href="https://www.linkedin.com/in/adam-shaleen-ab481225" target="_blank"><i class="fa fa-linkedin fa-3x"></a></i></div>
+            <div class="contact"><a href="mailto:adamshaleen@gmail.com"><i class="fa fa-envelope-o fa-3x"></a></i></div>
         </div>
 
         <!--Link to Jquery CDN-->
