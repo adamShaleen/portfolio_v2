@@ -2,7 +2,7 @@ angular.module("hireMe").service("service", function() {
 
 
 // BIO text
-this.bio = "I grew up in Minnesota, where I learned all about proper ice house placement, how to properly eat a 'Juicy Lucy', and about work ethic.  I've done quite a bit of everything over the years, but now I'm setting my sights on a career in web development.  Outside of the digital world you can find me out on the trail with my wife, Jen, and our cattle dog, Archer.  I'd love to talk with you about your projects, your dev team, or where the good local spots are.";
+this.bio = "I grew up in Minnesota, where I learned all about proper ice house placement, how to eat a 'Juicy Lucy', and about work ethic.  I've done quite a bit of everything over the years, but now I'm setting my sights on a career in web development.  Outside of the digital world you can find me out on the trail with my wife, Jen, and our cattle dog, Archer.  I'd love to talk with you about your projects, your dev team, or where the good local spots are.";
 
 this.getBio = function() {
     return this.bio;
@@ -18,7 +18,7 @@ this.getSkillset = function() {
 
 
 // Project text
-this.project = "My current body of work focuses on simple design and appropriate functionality for the task.  The more I learn, the more I try to incorporate new techniques into my style.  Please check back often for new and different examples as I continue my career into web development.";
+this.project = "My current body of work focuses on simple design and appropriate functionality for the task.  The more I learn, the more I try to incorporate new techniques into my projects.  Please check back often for new and different examples as I continue my career into web development.";
 
 this.getProject = function() {
     return this.project;

@@ -9,23 +9,16 @@ html, body {
     overflow-x: hidden;
 }
 
-/*.background_container {
-    background: linear-gradient(rgb(157, 65, 236), rgb(235, 0, 255));
-}*/
-
 .title_container {
     text-align: center;
+    background: black;
+    color: white;
+    padding-bottom: 10px;
 }
 
 .title_text {
     font-size: 14vw;
 }
-
-/*.title_text p {
-    background: -webkit-linear-gradient(black, rgb(50, 108, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}*/
 
 .tagline {
     text-align: center;
@@ -39,9 +32,13 @@ hr {
 
 .image {
     height: 350px;
-    width: 100%;
+    /*width: 100%;*/
     background: black;
     z-index: 1;
+}
+
+#about {
+    margin-top: 20px;
 }
 
 .content {
@@ -77,8 +74,8 @@ hr {
     height: 28vh;
     background-size: cover;
     background-position: center;
-    border-radius: 2%;
-    border: 1px solid black;
+    /*border-radius: 2%;
+    border: 1px solid black;*/
     margin-bottom: 20px;
 }
 
@@ -111,12 +108,12 @@ hr {
 #content_3 img {
     width: 25vw;
     height: 20vh;
-    border: 1px solid black;
-    border-radius: 2%;
+    /*border: 1px solid black;
+    border-radius: 2%;*/
 }
 
-#wall_1 {
-    background: url("img/tree_full.jpg");
+/*#wall_1 {
+    background: url("img/tree_full.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -134,7 +131,7 @@ hr {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-}
+}*/
 
 
 /*Footer contact container*/
@@ -155,15 +152,18 @@ hr {
 
 .contact a{
     text-decoration: none;
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
 /* Media queries */
 /* set for iPhone 5 */
 @media (min-width: 320px) {
+    h1 {
+        text-align: center;
+    }
     .image {
-        height: 150px;
+        height: 160px;
     }
     .tagline {
         font-size: 5vw;
@@ -175,7 +175,8 @@ hr {
         font-size: 9vw;
     }
     .pic1 {
-        height: 12vh;
+        height: 30vh;
+        width: 100%;
     }
     .content p {
         font-size: 5vw;
@@ -186,9 +187,20 @@ hr {
         width: 14vw;
         height: 10vh;
     }
+    .project_icons {
+        display: block;
+        flex-direction: none;
+        justify-content: none;
+    }
     #content_3 img {
-        width: 30vw;
-        height: 10vh;
+        width: 100%;
+        height: 25vh;
+    }
+    #bottom_hr {
+        display: none;
+    }
+    .footer {
+        background: black;
     }
 }
 
@@ -200,21 +212,42 @@ hr {
     .tagline {
         font-size: 4vw;
     }
-    .image {
+    /*.image {
         height: 260px;
-    }
+    }*/
     .pic1 {
-        height: 18vh;
+        height: 35vh;
     }
-
+    #content_2 img {
+        width: 10vw;
+        height: 7vh;
+    }
     #content_3 img {
-        height: 15vh;
+        height: 12vh;
+        width: 27vw;
     }
     .content h1 {
-        font-size: 7vw;
+        font-size: 6vw;
     }
     .content p {
-        font-size: 4vw;
+        font-size: 3vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .skill_icons {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .project_icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .project_icons img {
+        border: 1px solid black;
+    }
+    .contact i {
+        font-size: 6vw;
     }
 }
 
