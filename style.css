@@ -14,6 +14,7 @@ html, body {
     background: black;
     color: white;
     padding-bottom: 10px;
+    width: 100%;
 }
 
 .title_text {
@@ -23,18 +24,6 @@ html, body {
 .tagline {
     text-align: center;
     font-size: 4vw;
-}
-
-hr {
-    margin: auto;
-    width: 80%;
-}
-
-.image {
-    height: 350px;
-    /*width: 100%;*/
-    background: black;
-    z-index: 1;
 }
 
 #about {
@@ -62,31 +51,15 @@ hr {
     font-family: "Karla";
 }
 
-.about_pics {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .pic1 {
     background: url("img/driving.JPG") no-repeat center;
     width: 30vw;
     height: 28vh;
     background-size: cover;
     background-position: center;
-    /*border-radius: 2%;
-    border: 1px solid black;*/
+    border-radius: 2%;
+    border: 1px solid black;
     margin-bottom: 20px;
-}
-
-.pic2 {
-    background: url("img/thumb.JPG") no-repeat;
-    background-size: cover;
-}
-
-.pic3 {
-    background: url("img/hiking.jpeg")no-repeat;
-    background-size: cover;
 }
 
 .skill_icons {
@@ -108,33 +81,7 @@ hr {
 #content_3 img {
     width: 25vw;
     height: 20vh;
-    /*border: 1px solid black;
-    border-radius: 2%;*/
 }
-
-/*#wall_1 {
-    background: url("img/tree_full.jpg") no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#wall_2 {
-    background: url("img/tree_full.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#wall_3 {
-    background: url("img/tree_full.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}*/
-
-
-/*Footer contact container*/
 
 .footer {
     width: 100%;
@@ -149,21 +96,21 @@ hr {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+.footer i:hover {
+    color: rgb(112, 64, 152);
+}
 .contact a{
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
 
+/*===========================================================================*/
 /* Media queries */
 /* set for iPhone 5 */
 @media (min-width: 320px) {
     h1 {
         text-align: center;
-    }
-    .image {
-        height: 160px;
     }
     .tagline {
         font-size: 5vw;
@@ -196,27 +143,37 @@ hr {
         width: 100%;
         height: 25vh;
     }
-    #bottom_hr {
-        display: none;
-    }
     .footer {
         background: black;
     }
 }
 
+/*==========================================================================*/
 /* iPad */
 @media (min-width: 768px) {
+    .title_container {
+        font-size: 10vw;
+        background: url("img/driving.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 250px;
+        width: 100%;
+        text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+                 #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+    }
     .title_text {
-        font-size: 14vw;
+        font-size: 10vw;
+        padding-top: 7vh;
     }
     .tagline {
-        font-size: 4vw;
+        font-size: 3vw;
     }
-    /*.image {
-        height: 260px;
+    /*.pic1 {
+        height: 26vh;
     }*/
     .pic1 {
-        height: 35vh;
+        display: none;
     }
     #content_2 img {
         width: 10vw;
@@ -251,6 +208,7 @@ hr {
     }
 }
 
+/*============================================================================*/
 @media (min-width: 1100px) {
     .title_text {
         font-size: 9vw;
@@ -260,13 +218,6 @@ hr {
     }
     .menu_cover {
         margin-top: 21px;
-    }
-    .side_margin {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-    .image {
-        height: 300px;
     }
     .tagline {
         font-size: 3vw;
@@ -279,7 +230,6 @@ hr {
         padding-bottom: 5vh;
     }
     .pic1 {
-        width: 25vw;
         height: 20vh;
     }
     #content_2 img {
@@ -292,22 +242,29 @@ hr {
     }
 }
 
+/*=========================================================================*/
 @media (min-width: 1300px) {
-    .side_margin {
-        margin-left: 10vw;
-        margin-right: 10vw;
+    .title_text {
+        font-size: 7vw;
+    }
+    .tagline {
+        font-size: 2vw;
+    }
+    #content_2 img {
+        width: 80px;
+    }
+    #content_3 img {
+        width: 300px;
+        height: 175px;
+    }
+    .contact i {
+        font-size: 5vw;
     }
 }
 
+/*==========================================================================*/
 @media (min-width: 1400px) {
-    .title_text {
-        font-size: 8vw;
-    }
-    .image {
-        height: 350px;
-    }
     .pic1 {
-        width: 25vw;
         height: 25vh;
     }
     .content h1 {
@@ -316,80 +273,66 @@ hr {
     .content p {
         font-size: 2vw;
     }
-    #content_3 img {
-        height: 25vh;
+    .project_icons {
+        margin-left: 8vw;
+        margin-right: 8vw;
     }
 }
 
+/*==========================================================================*/
 @media (min-width: 1500px) {
-    .side_margin {
-        margin-left: 12vw;
-        margin-right: 12vw;
+    .title_text {
+        font-size: 6vw;
     }
-
-    .pic1 {
-        width: 22vw;
-        height: 22vh;
-    }
-
     .content h1 {
         font-size: 3vw;
     }
-
     .content p {
         font-size: 1.5vw;
     }
-
-    #content_3 img {
-        width: 22vw;
-        height: 22vh;
+    .contact i {
+        font-size: 4vw;
     }
 }
 
+/*=========================================================================*/
 @media (min-width: 1600px) {
     .title_text {
-        font-size: 7vw;
-    }
-    .tagline {
-        font-size: 2.5vw;
-    }
-    .side_margin {
-        margin-left: 13vw;
-        margin-right: 13vw;
+        padding-top: 5vh;
     }
     .content h1 {
         font-size: 2.5vw;
     }
-    .pic1 {
-        width: 20vw;
-        height: 20vh;
+    .content p {
+        margin-left: 20vw;
+        margin-right: 20vw;
     }
-    #content_3 img {
-        width: 20vw;
-        height: 20vh;
+    .skill_icons {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    .project_icons {
+        margin-left: 15vw;
+        margin-right: 15vw;
     }
 }
 
-@media (min-width: 1900px) {
-    .side_margin {
-        margin-left: 17vw;
-        margin-right: 17vw;
+/*===========================================================================*/
+@media (min-width: 1800px) {
+    .content p {
+        margin-left: 25vw;
+        margin-right: 25vw;
     }
-    .title_text {
-        font-size: 7vw;
+    .skill_icons {
+        margin-left: 22vw;
+        margin-right: 22vw;
     }
-    .tagline {
-        font-size: 2vw;
+    .project_icons {
+        margin-left: 20vw;
+        margin-right: 20vw;
     }
-    .image {
-        height: 400px;
-    }
-    .pic1 {
-        width: 18vw;
-        height: 18vh;
-    }
-    #content_3 img {
-        width: 18vw;
-        height: 18vh;
+    .contact i {
+        font-size: 3vw;
     }
 }
+/*===========================================================================*/
