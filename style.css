@@ -169,9 +169,6 @@ html, body {
     .tagline {
         font-size: 3vw;
     }
-    /*.pic1 {
-        height: 26vh;
-    }*/
     .pic1 {
         display: none;
     }
@@ -192,8 +189,8 @@ html, body {
         margin-right: 10vw;
     }
     .skill_icons {
-        margin-left: 5vw;
-        margin-right: 5vw;
+        margin-left: 12vw;
+        margin-right: 12vw;
     }
     .project_icons {
         display: flex;
@@ -204,7 +201,7 @@ html, body {
         border: 1px solid black;
     }
     .contact i {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 }
 
@@ -258,7 +255,7 @@ html, body {
         height: 175px;
     }
     .contact i {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 }
 
